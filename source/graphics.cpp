@@ -64,7 +64,7 @@ void bitmap_background(string version, string type)
 	u32 imgX =(Graphics->width/2)-(png_logo.width/2), imgY = ypos(30);
 	ILogo.AlphaDrawIMGtoBitmap(imgX,imgY,&png_logo,&Menu_Layer);
 	F2.PrintfToBitmap(center_text_x(sizeFont, "Firmware: X.XX (CEX)"),Graphics->height-(sizeFont+ypos(20)+(sizeFont-ypos(5))+ypos(10)),&Menu_Layer,0xc0c0c0,sizeFont, "Firmware: %s (%s)", version.c_str(), type.c_str());
-	F2.PrintfToBitmap(center_text_x(sizeFont-ypos(5), "Installer created by XMBM+ Team"),Graphics->height-((sizeFont-ypos(5))+ypos(10)),&Menu_Layer,0xd38900,sizeFont-ypos(5), "Installer created by XMBM+ Team");
+	F2.PrintfToBitmap(center_text_x(sizeFont-ypos(5), "Installer created by XMBM+ Team"),Graphics->height-((sizeFont-ypos(5))+ypos(10)),&Menu_Layer,0xd38900,sizeFont-ypos(5), "Installer created by XMBM+ Team and modified by Jes");
 }
 
 void draw_menu(int choosed)
