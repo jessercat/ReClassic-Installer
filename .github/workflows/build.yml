@@ -52,6 +52,6 @@ jobs:
     - name: Push package artifact
       uses: actions/upload-artifact@v4
       with:
-        name: pkgi-ps3-build_${{ env.sha_name }}
-        path: pkgi-ps3.pkg
+        name: xmb-manager-plus-installer_${{ env.sha_name }}
+        path: xmb-manager-plus-installer.pkg
         if-no-files-found: error
